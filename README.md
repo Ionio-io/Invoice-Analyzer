@@ -2,6 +2,8 @@
 
 This system processes invoices using AI vision to extract data and generate insightful visualizations. It supports both PDF and image files (PNG format) as input.
 
+Note that this can only process invoices that are one page long. Multiple pages are not supported, yet.
+
 ## Features
 
 - PDF and image invoice processing
@@ -15,14 +17,13 @@ This system processes invoices using AI vision to extract data and generate insi
 
 - Python 3.8 or higher
 - Together API key
-- Poppler (for PDF processing)
 
 ## Installation
 
 1. Clone the repository:
 ```bash
 git clone <repository-url>
-cd accounting-vlm
+cd Invoice-Analyzer
 ```
 
 2. Create and activate a virtual environment:
@@ -56,12 +57,13 @@ The script will:
 - Create visualizations:
   - `invoice_trend.png`: Timeline of invoice amounts
   - `service_amounts.png`: Bar chart of amounts by service type
+  - Note: You can change the name of the output files in the `main.py` file.
 - Save all extracted data to `invoice_data.json`
 
 ## Output
 
 The system generates:
-- Structured JSON data for each invoice
+- Structured JSON data for each invoice in the `invoice_data.json` file
 - Trend analysis graphs
 - Total amounts by service type
 - Consolidated invoice data file
@@ -84,4 +86,5 @@ accounting-vlm/
 
 ## License
 
-[Your chosen license] 
+This project is licensed under the MIT License.
+Have fun, go wild!
