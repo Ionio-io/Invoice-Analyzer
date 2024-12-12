@@ -2,6 +2,8 @@
 
 This system processes invoices using AI vision to extract data and generate insightful visualizations. It supports both PDF and image files (PNG format) as input.
 
+![Invoice Analyzer](assets/generated-invoice-data.gif)
+
 Note that this can only process invoices that are one page long. Multiple pages are not supported, yet.
 
 ## Features
